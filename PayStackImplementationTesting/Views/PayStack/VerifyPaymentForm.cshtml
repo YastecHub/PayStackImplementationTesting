@@ -1,0 +1,25 @@
+﻿@model PayStackImplementationTesting.Dtos.ResponseModel.PaymentVerificationResponseDto
+
+@{
+    ViewData["Title"] = "Payment Verification";
+}
+
+<h2>Payment Verification</h2>
+
+@if (Model != null)
+{
+    <div>
+        <h3>Payment Verification Details</h3>
+        <p><strong>Reference:</strong> @Model.Reference</p>
+        <p><strong>Status:</strong> @Model.Status</p>
+        <p><strong>Amount:</strong> @Model.Amount</p>
+        <p><strong>Currency:</strong> @Model.Currency</p>
+        <p><strong>Payment Gateway Response:</strong> @Model.GatewayResponse</p>
+        <p><strong>Verification Date:</strong> @Model.VerificationDate</p>
+        <!-- Add any other relevant payment details here -->
+    </div>
+}
+else
+{
+    <p>No payment details found. Please check the payment reference.</p>
+}

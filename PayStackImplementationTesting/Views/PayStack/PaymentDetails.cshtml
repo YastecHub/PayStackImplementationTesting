@@ -1,0 +1,16 @@
+﻿@model PayStackImplementationTesting.Dtos.ResponseModel.PaymentVerificationResponseDto
+
+@{
+    ViewData["Title"] = "Payment Details";
+}
+
+<h2>Payment Details</h2>
+
+<div>
+    <h3>Payment was successful</h3>
+    <p><strong>Reference:</strong> @Model.Reference</p>
+    <p><strong>Status:</strong> @Model.Status</p>
+    <p><strong>Amount:</strong> @Model.Amount</p>
+    <p><strong>Currency:</strong> @Model.Currency</p>
+    <p><strong>Payment Gateway Response:</strong> @Model.GatewayResponse</p>
+</div>
